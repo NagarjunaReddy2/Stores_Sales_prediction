@@ -1,0 +1,6 @@
+README.md
+setup.py
+SalesStorePrediction.egg-info/PKG-INFO
+SalesStorePrediction.egg-info/SOURCES.txt
+SalesStorePrediction.egg-info/dependency_links.txt
+SalesStorePrediction.egg-info/top_level.txt
