@@ -1,4 +1,12 @@
 numpy
 pandas
-scikit-learn
 ipykernel
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+dill
+
+-e .
