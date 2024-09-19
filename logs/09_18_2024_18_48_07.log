@@ -1,0 +1,36 @@
+[2024-09-18 18:48:08,181] 97 werkzeug -INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-09-18 18:48:08,182] 97 werkzeug -INFO - [33mPress CTRL+C to quit[0m
+[2024-09-18 18:48:14,527] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:48:14] "GET /predict HTTP/1.1" 200 -
+[2024-09-18 18:48:28,355] 838 app -ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 18, in predict_datapoint
+    Item_Weight=float(request.form.get('Item_Weight')),
+TypeError: float() argument must be a string or a number, not 'NoneType'
+[2024-09-18 18:48:28,358] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:48:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-09-18 18:50:28,163] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:50:28] "GET /predict HTTP/1.1" 200 -
+[2024-09-18 18:50:43,716] 838 app -ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 18, in predict_datapoint
+    Item_Weight=float(request.form.get('Item_Weight')),
+TypeError: float() argument must be a string or a number, not 'NoneType'
+[2024-09-18 18:50:43,717] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:50:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-09-18 18:50:59,648] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:50:59] "GET / HTTP/1.1" 200 -
+[2024-09-18 18:51:02,427] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:51:02] "[33mGET /predictdata HTTP/1.1[0m" 404 -
+[2024-09-18 18:51:06,078] 97 werkzeug -INFO - 127.0.0.1 - - [18/Sep/2024 18:51:06] "[33mGET /predictdata HTTP/1.1[0m" 404 -

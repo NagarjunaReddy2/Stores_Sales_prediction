@@ -1,0 +1,6 @@
+[2024-09-18 20:02:35,346] 22 root -INFO - Entered the data cleaning method or component
+[2024-09-18 20:02:35,360] 27 root -INFO - Read the dataset as dataframe
+[2024-09-18 20:02:35,367] 39 root -INFO - directory created
+[2024-09-18 20:02:35,385] 43 root -INFO - Train data saved
+[2024-09-18 20:02:35,385] 45 root -INFO - Test data saved
+[2024-09-18 20:02:35,385] 47 root -INFO - Train and test data cleaned

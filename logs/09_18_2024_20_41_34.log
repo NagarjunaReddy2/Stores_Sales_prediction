@@ -1,0 +1,25 @@
+[2024-09-18 20:41:35,387] 22 root -INFO - Entered the data cleaning method or component
+[2024-09-18 20:41:35,404] 27 root -INFO - Read the dataset as dataframe
+[2024-09-18 20:41:35,404] 39 root -INFO - directory created
+[2024-09-18 20:41:35,441] 43 root -INFO - Train data saved
+[2024-09-18 20:41:35,447] 45 root -INFO - Test data saved
+[2024-09-18 20:41:35,447] 47 root -INFO - Train and test data cleaned
+[2024-09-18 20:41:35,447] 16 root -INFO - Data Cleaning completed. Cleaned Train Data: artifacts\train_cleaned.csv, Cleaned Test Data: artifacts\test_cleaned.csv
+[2024-09-18 20:41:35,447] 20 root -INFO - Entered the data ingestion method or component
+[2024-09-18 20:41:35,497] 24 root -INFO - Read the dataset as dataframe
+[2024-09-18 20:41:35,551] 31 root -INFO - Raw data saved
+[2024-09-18 20:41:35,551] 34 root -INFO - Train-test split initiated
+[2024-09-18 20:41:35,606] 40 root -INFO - Train and test data saved
+[2024-09-18 20:41:35,607] 21 root -INFO - Data Ingestion completed. Raw Data: artifacts\data.csv, Train Data: artifacts\train.csv, Test Data: artifacts\test.csv
+[2024-09-18 20:41:35,620] 76 root -INFO - Read train and test data completed
+[2024-09-18 20:41:35,621] 78 root -INFO - Obtaining preprocessing object
+[2024-09-18 20:41:35,621] 53 root -INFO - Features to label-encode: ['Item_Fat_Content', 'Outlet_Location_Type']
+[2024-09-18 20:41:35,621] 54 root -INFO - Features to one-hot-encode: ['Item_Type', 'Outlet_Size', 'Outlet_Type']
+[2024-09-18 20:41:35,621] 55 root -INFO - Features to scale: ['Item_Weight', 'Item_MRP', 'Outlet_Age']
+[2024-09-18 20:41:35,621] 65 root -INFO - Data transformation pipeline created.
+[2024-09-18 20:41:35,623] 87 root -INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2024-09-18 20:41:35,655] 91 root -INFO - Saved preprocessing object.
+[2024-09-18 20:41:35,659] 26 root -INFO - Data Transformation completed.
+[2024-09-18 20:41:35,659] 33 root -INFO - Split training and test input data
+[2024-09-18 20:41:35,659] 103 root -INFO - Exception occurred at Model Training
+[2024-09-18 20:41:35,659] 34 root -ERROR - An error occurred: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py] line number [79] error message [evaluate_model() got an unexpected keyword argument 'params']

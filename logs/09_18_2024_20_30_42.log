@@ -1,0 +1,7 @@
+[2024-09-18 20:30:42,543] 20 root -INFO - Entered the data ingestion method or component
+[2024-09-18 20:30:42,543] 24 root -INFO - Read the dataset as dataframe
+[2024-09-18 20:30:42,591] 31 root -INFO - Raw data saved
+[2024-09-18 20:30:42,591] 34 root -INFO - Train-test split initiated
+[2024-09-18 20:30:42,622] 40 root -INFO - Train and test data saved
+[2024-09-18 20:30:42,622] 16 root -INFO - Data Ingestion completed. Raw Data: artifacts\data.csv, Train Data: artifacts\train.csv, Test Data: artifacts\test.csv
+[2024-09-18 20:30:42,622] 29 root -ERROR - An error occurred: 'DataTransformation' object has no attribute 'initialize_data_transformation'

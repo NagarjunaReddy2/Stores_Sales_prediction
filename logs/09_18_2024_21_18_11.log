@@ -1,0 +1,25 @@
+[2024-09-18 21:18:11,364] 22 root -INFO - Entered the data cleaning method or component
+[2024-09-18 21:18:11,379] 27 root -INFO - Read the dataset as dataframe
+[2024-09-18 21:18:11,379] 39 root -INFO - directory created
+[2024-09-18 21:18:11,410] 43 root -INFO - Train data saved
+[2024-09-18 21:18:11,410] 45 root -INFO - Test data saved
+[2024-09-18 21:18:11,410] 47 root -INFO - Train and test data cleaned
+[2024-09-18 21:18:11,410] 16 root -INFO - Data Cleaning completed. Cleaned Train Data: artifacts\train_cleaned.csv, Cleaned Test Data: artifacts\test_cleaned.csv
+[2024-09-18 21:18:11,410] 20 root -INFO - Entered the data ingestion method or component
+[2024-09-18 21:18:11,443] 24 root -INFO - Read the dataset as dataframe
+[2024-09-18 21:18:11,489] 31 root -INFO - Raw data saved
+[2024-09-18 21:18:11,489] 34 root -INFO - Train-test split initiated
+[2024-09-18 21:18:11,521] 40 root -INFO - Train and test data saved
+[2024-09-18 21:18:11,521] 21 root -INFO - Data Ingestion completed. Raw Data: artifacts\data.csv, Train Data: artifacts\train.csv, Test Data: artifacts\test.csv
+[2024-09-18 21:18:11,537] 76 root -INFO - Read train and test data completed
+[2024-09-18 21:18:11,537] 78 root -INFO - Obtaining preprocessing object
+[2024-09-18 21:18:11,537] 53 root -INFO - Features to label-encode: ['Item_Fat_Content', 'Outlet_Location_Type']
+[2024-09-18 21:18:11,537] 54 root -INFO - Features to one-hot-encode: ['Item_Type', 'Outlet_Size', 'Outlet_Type']
+[2024-09-18 21:18:11,537] 55 root -INFO - Features to scale: ['Item_Weight', 'Item_MRP', 'Outlet_Age']
+[2024-09-18 21:18:11,537] 65 root -INFO - Data transformation pipeline created.
+[2024-09-18 21:18:11,537] 87 root -INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2024-09-18 21:18:11,558] 91 root -INFO - Saved preprocessing object.
+[2024-09-18 21:18:11,558] 26 root -INFO - Data Transformation completed.
+[2024-09-18 21:18:11,558] 51 root -INFO - Exception occurred during model evaluation
+[2024-09-18 21:18:11,558] 48 root -ERROR - Error occurred in ModelTrainer: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [38] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]
+[2024-09-18 21:18:11,558] 34 root -ERROR - An error occurred: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py] line number [36] error message [Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [38] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]]

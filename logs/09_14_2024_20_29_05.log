@@ -1,0 +1,8 @@
+[2024-09-14 20:29:05,742] 76 root -INFO - Read train and test data completed
+[2024-09-14 20:29:05,742] 78 root -INFO - Obtaining preprocessing object
+[2024-09-14 20:29:05,743] 53 root -INFO - Features to label-encode: ['Item_Fat_Content', 'Outlet_Location_Type']
+[2024-09-14 20:29:05,743] 54 root -INFO - Features to one-hot-encode: ['Item_Type', 'Outlet_Size', 'Outlet_Type']
+[2024-09-14 20:29:05,743] 55 root -INFO - Features to scale: ['Item_Weight', 'Item_MRP', 'Outlet_Age']
+[2024-09-14 20:29:05,743] 65 root -INFO - Train test split initiated
+[2024-09-14 20:29:05,747] 87 root -INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2024-09-14 20:29:05,806] 91 root -INFO - Saved preprocessing object.

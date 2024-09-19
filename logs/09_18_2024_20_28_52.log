@@ -1,0 +1,5 @@
+[2024-09-18 20:28:52,969] 20 root -INFO - Entered the data ingestion method or component
+[2024-09-18 20:28:53,001] 24 root -INFO - Read the dataset as dataframe
+[2024-09-18 20:28:53,048] 31 root -INFO - Raw data saved
+[2024-09-18 20:28:53,048] 34 root -INFO - Train-test split initiated
+[2024-09-18 20:28:53,079] 40 root -INFO - Train and test data saved

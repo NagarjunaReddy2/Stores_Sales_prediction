@@ -1,0 +1,78 @@
+[2024-09-18 21:13:38,236] 22 root -INFO - Entered the data cleaning method or component
+[2024-09-18 21:13:38,268] 27 root -INFO - Read the dataset as dataframe
+[2024-09-18 21:13:38,286] 39 root -INFO - directory created
+[2024-09-18 21:13:38,315] 43 root -INFO - Train data saved
+[2024-09-18 21:13:38,315] 45 root -INFO - Test data saved
+[2024-09-18 21:13:38,315] 47 root -INFO - Train and test data cleaned
+[2024-09-18 21:13:38,315] 16 root -INFO - Data Cleaning completed. Cleaned Train Data: artifacts\train_cleaned.csv, Cleaned Test Data: artifacts\test_cleaned.csv
+[2024-09-18 21:13:38,315] 20 root -INFO - Entered the data ingestion method or component
+[2024-09-18 21:13:38,346] 24 root -INFO - Read the dataset as dataframe
+[2024-09-18 21:13:38,411] 31 root -INFO - Raw data saved
+[2024-09-18 21:13:38,411] 34 root -INFO - Train-test split initiated
+[2024-09-18 21:13:38,456] 40 root -INFO - Train and test data saved
+[2024-09-18 21:13:38,465] 21 root -INFO - Data Ingestion completed. Raw Data: artifacts\data.csv, Train Data: artifacts\train.csv, Test Data: artifacts\test.csv
+[2024-09-18 21:13:38,466] 76 root -INFO - Read train and test data completed
+[2024-09-18 21:13:38,466] 78 root -INFO - Obtaining preprocessing object
+[2024-09-18 21:13:38,466] 53 root -INFO - Features to label-encode: ['Item_Fat_Content', 'Outlet_Location_Type']
+[2024-09-18 21:13:38,466] 54 root -INFO - Features to one-hot-encode: ['Item_Type', 'Outlet_Size', 'Outlet_Type']
+[2024-09-18 21:13:38,466] 55 root -INFO - Features to scale: ['Item_Weight', 'Item_MRP', 'Outlet_Age']
+[2024-09-18 21:13:38,466] 65 root -INFO - Data transformation pipeline created.
+[2024-09-18 21:13:38,466] 87 root -INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2024-09-18 21:13:38,516] 91 root -INFO - Saved preprocessing object.
+[2024-09-18 21:13:38,516] 26 root -INFO - Data Transformation completed. Preprocessor file saved at: artifacts\preprocessor.pkl
+[2024-09-18 21:13:38,516] 31 root -INFO - Split training and test input data
+[2024-09-18 21:13:38,516] 25 root -INFO - Evaluating model: Random Forest
+[2024-09-18 21:13:38,516] 41 root -INFO - Starting fit for Random Forest
+[2024-09-18 21:13:48,434] 43 root -INFO - Completed fit for Random Forest
+[2024-09-18 21:13:48,464] 25 root -INFO - Evaluating model: Decision Tree
+[2024-09-18 21:13:48,464] 41 root -INFO - Starting fit for Decision Tree
+[2024-09-18 21:13:48,464] 58 root -ERROR - Exception occurred during model evaluation
+[2024-09-18 21:13:48,464] 109 root -ERROR - Exception occurred at Model Training
+Traceback (most recent call last):
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py", line 42, in evaluate_model
+    search.fit(X_train, y_train)
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\base.py", line 1145, in wrapper
+    estimator._validate_params()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\base.py", line 638, in _validate_params
+    validate_parameter_constraints(
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\utils\_param_validation.py", line 96, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py", line 77, in initiate_model_trainer
+    model_report = evaluate_model(
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py", line 59, in evaluate_model
+    raise customexception(e, sys)
+src.StoreSalesPrediction.exception.customexception: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [42] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]
+[2024-09-18 21:13:48,470] 34 root -ERROR - An error occurred: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py] line number [77] error message [Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [42] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]]
+Traceback (most recent call last):
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py", line 42, in evaluate_model
+    search.fit(X_train, y_train)
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\base.py", line 1145, in wrapper
+    estimator._validate_params()
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\base.py", line 638, in _validate_params
+    validate_parameter_constraints(
+  File "C:\ineroun classes\internship_project(Stores_sales_production)\venv\lib\site-packages\sklearn\utils\_param_validation.py", line 96, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py", line 77, in initiate_model_trainer
+    model_report = evaluate_model(
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py", line 59, in evaluate_model
+    raise customexception(e, sys)
+src.StoreSalesPrediction.exception.customexception: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [42] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/StoreSalesPrediction/pipelines/training_pipeline.py", line 30, in <module>
+    model_trainer_obj.initiate_model_trainer(train_arr, test_arr)
+  File "c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py", line 110, in initiate_model_trainer
+    raise customexception(e, sys)
+src.StoreSalesPrediction.exception.customexception: Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\components\model_trainer.py] line number [77] error message [Error occured in python script name [c:\ineroun classes\internship_project(stores_sales_production)\src\StoreSalesPrediction\utils\utils.py] line number [42] error message [The 'n_iter' parameter of RandomizedSearchCV must be an int in the range [1, inf). Got 0 instead.]]
